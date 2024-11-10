@@ -10,7 +10,7 @@ void Symptoms::addkey(string key) {
     symp_key[key] = set<string>();
 }
 
-vector<string> Symptoms::find(string word) {
+vector<string> Symptoms::findWord(string word) {
     vector<string> keywords;
     for (auto& key_val : symp_key) {
         if (key_val.second.count(word) > 0) {
@@ -35,8 +35,8 @@ void Symptoms::saveToFile(string filename) {
     outFile.close();
 }
 
-void Symptoms::loadFromFile(string filename) {
-    ifstream inFile(filename);
+void Symptoms::loadFromFile() {
+    ifstream inFile();
     string line;
     while (getline(inFile, line)) 
 }

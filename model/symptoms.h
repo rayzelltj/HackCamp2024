@@ -26,15 +26,16 @@ public:
 private:
     // functions to add new keys or values
     void addValue(string key, string value);
-    void addkey(string key)
+    void addkey(string key);
 
     // function to search for words
-    // vector<string> find(string word);
+    vector<string> findWord(string word);
 
     // Helper functions to help with the parsing done by the constructor
     void parseDefinitions(ifstream definitions);
     void parseKeywords(ifstream keywords);
     void saveToFile(string filename);
+    void Symptoms::loadFromFile();
 
     // Stores the name of the symptoms and keywords associated with it
     map<string, set<string>> symp_key; 
