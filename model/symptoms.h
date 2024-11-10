@@ -21,7 +21,10 @@ class Symptoms {
 public:
 
     // Constructor that initializes the private fields
-    Symptoms(ifstream definitions, ifstream keywords);
+    Symptoms();
+    void loadFromFile(const string& filename);
+    map<string, set<string>> symp_key;
+
 
 private:
     // functions to add new keys or values
@@ -35,10 +38,9 @@ private:
     void parseDefinitions(ifstream definitions);
     void parseKeywords(ifstream keywords);
     void saveToFile(string filename);
-    void Symptoms::loadFromFile();
 
     // Stores the name of the symptoms and keywords associated with it
-    map<string, set<string>> symp_key; 
+    // map<string, set<string>> symp_key; 
 
     // Stores the name of the symptoms and definition associated with it
     map<string, string> symp_def;
