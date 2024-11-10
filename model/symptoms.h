@@ -22,7 +22,11 @@ public:
 
 private:
 
-    map<string, set<string>> terms;
+    // Stores the name of the symptoms and keywords associated with it
+    map<string, set<string>> symp_key; 
+
+    // Stores the name of the symptoms and definition associated with it
+    map<string, string> symp_def;
 
 };
 
