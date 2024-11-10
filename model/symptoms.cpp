@@ -3,16 +3,16 @@
 using namespace std;
 
 void Symptoms::addValue(string key, string value) {
-    terms[key].insert(value);
+    symp_key[key].insert(value);
 }
 
 void Symptoms::addkey(string key) {
-    terms[key] = set<string>();
+    symp_key[key] = set<string>();
 }
 
 vector<string> Symptoms::find(string word) {
     vector<string> keywords;
-    for (auto& key_val : terms) {
+    for (auto& key_val : symp_key) {
         if (key_val.second.count(word) > 0) {
             keywords.push_back(key_val.first);
         }
@@ -26,7 +26,7 @@ vector<string> Symptoms::countKeys(string word) {
 
 void Symptoms::saveToFile(string filename) {
     ofstream outFile(filename);
-    for (auto& entry : terms) {
+    for (auto& entry : symp_key) {
         outFile << entry.first << ": ";
 
         for (auto& word : entry.second) {
