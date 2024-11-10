@@ -10,23 +10,41 @@ const TextBox = () => {
 
   return (
     <div className = "TextBox">
-      <label htmlFor="TextBox">Enter text: </label>
+      <Label/>
+
       <input
         type="text"
         id="textBox"
         value={text}          
         onChange={handleChange}
+        className="input-field"
         placeholder="Type something here..."
+        autoFocus
       />
-      <p>You typed: {text}</p> {}
     </div>
   );
 }
 
-const Header = ({ time }) => {
+const Header = () => {
   return (
     <div className="App-header">
-      <h1>Symptoms</h1>
+      <h1>MedLex</h1>
+    </div>
+  );
+};
+
+const SubHeader = () => {
+  return (
+    <div className="App-subheader">
+      <h1>A symptoms interpreter</h1>
+    </div>
+  );
+};
+
+const Label = () => {
+  return (
+    <div className="label">
+      <h1>Enter Your Symptoms</h1>
     </div>
   );
 };
@@ -35,8 +53,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <TextBox />
-      <TextBox />
+      <SubHeader />
       <TextBox />
     </div>
   );
