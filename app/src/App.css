@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +26,22 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.TextBox {
+  font-size: 1.5em; 
+  font-family: monospace;
+  white-space: pre;
+  outline: 2px solid #ccc7c5;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eae6e1;
+  position: relative;
+  z-index: 0;
+  letter-spacing: 0.05em; 
+  box-sizing: border-box; 
+  width: 100%;
 }
 
 @keyframes App-logo-spin {
