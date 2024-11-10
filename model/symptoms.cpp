@@ -4,7 +4,8 @@
 using namespace std;
 
 Symptoms::Symptoms() {
-    // loadFromFile("");
+    parseKeywords();
+    parseDefinitions();
 }
 
 void Symptoms::addValue(string key, string value) {
@@ -25,23 +26,8 @@ vector<string> Symptoms::findWord(string word) {
     return keywords;
 }
 
-// void Symptoms::saveToFile(string filename) {
-//     ofstream outFile(filename);
-//     for (auto& entry : symp_key) {
-//         outFile << entry.first << ": ";
-
-//         for (auto& word : entry.second) {
-//             outFile << word << " ";
-//         }
-
-//         outFile << endl;
-//     }
-
-//     outFile.close();
-// }
-
-void Symptoms::loadFromFile(const string& filename) {
-    ifstream inFile(filename);
+void Symptoms::parseKeywords() {
+    ifstream inFile("symptoms_keywords.txt");
     string line;
 
     while (getline(inFile, line)) {
@@ -70,6 +56,31 @@ void Symptoms::loadFromFile(const string& filename) {
                     addValue(keyword, word);
                 }
             }
+        }
+    }
+
+    inFile.close();
+}
+
+void Symptoms::parseDefinitions() {
+    ifstream inFile("symptoms_definitions.txt");
+    string line;
+
+    while (getline(inFile, line)) {
+        line.erase(line.find_last_not_of(" \t\n") + 1);  // Remove trailing spaces and newlines
+
+        size_t colonPos = line.find(':');
+        if (colonPos != string::npos) {
+            // Extract the keyword (everything before the colon)
+            string keyword = line.substr(0, colonPos);
+
+            // Extract the definition string (everything after the colon)
+            string definitionStr = line.substr(colonPos + 1);
+
+            // Remove leading spaces from definition string
+            definitionStr.erase(0, definitionStr.find_first_not_of(" \t"));
+
+            symp_def[keyword] = definitionStr;
         }
     }
 

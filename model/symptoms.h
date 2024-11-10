@@ -22,8 +22,10 @@ public:
 
     // Constructor that initializes the private fields
     Symptoms();
-    void loadFromFile(const string& filename);
+    void parseKeywords();
+    void parseDefinitions();
     map<string, set<string>> symp_key;
+    map<string, string> symp_def;
 
 
 private:
@@ -43,7 +45,7 @@ private:
     // map<string, set<string>> symp_key; 
 
     // Stores the name of the symptoms and definition associated with it
-    map<string, string> symp_def;
+    // map<string, string> symp_def;
 
 };
 
