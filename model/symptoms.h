@@ -20,7 +20,14 @@ description of symptoms to medical terms for the symptoms
 class Symptoms {
 public:
 
+    // Constructor that initializes the private fields
+    Symptoms(ifstream definitions, ifstream keywords);
+
 private:
+
+    // Helper functions to help with the parsing done by the constructor
+    void parseDefinitions(ifstream definitions);
+    void parseKeywords(ifstream keywords);
 
     // Stores the name of the symptoms and keywords associated with it
     map<string, set<string>> symp_key; 
