@@ -20,10 +20,6 @@ vector<string> Symptoms::find(string word) {
     return keywords;
 }
 
-vector<string> Symptoms::countKeys(string word) {
-
-}
-
 void Symptoms::saveToFile(string filename) {
     ofstream outFile(filename);
     for (auto& entry : symp_key) {
