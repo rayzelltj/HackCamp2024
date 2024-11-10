@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f2f4f8;
+  background-color: #DFE5FF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,12 +19,12 @@ body {
 }
 
 .App-header h1 {
-  font-size: 3rem;
+  font-size: 100px;
   margin: 0;
 }
 
 .subheader {
-  font-size: 1.2rem;
+  font-size: 25px;
   color: #555;
   margin: 0;
 }
@@ -38,25 +38,10 @@ body {
 }
 
 .input-field {
-  width: 50%;
-  max-width: 500px;
+  width: 718px;
   font-size: 1.2rem;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 5px;
   box-sizing: border-box;
-}
-
-.search-button {
-  padding: 10px;
-  font-size: 1.2rem;
-  border: none;
-  background-color: #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-}
-
-.search-button:hover {
-  background-color: #bbb;
 }
