@@ -18,7 +18,7 @@ const TextBox = () => {
         value={text}          
         onChange={handleChange}
         className="input-field"
-        placeholder="Type something here..."
+        placeholder="Type your symptoms here..."
         autoFocus
       />
     </div>
