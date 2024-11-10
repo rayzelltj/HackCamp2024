@@ -1,0 +1,54 @@
+fever: hot burning feverish sweaty chills temperature body heat warm sweating flushed
+chills: shivering cold trembling goosebumps freezing shaking icy cold spells tremors restless
+nausea: queasy stomach upset feeling sick vomiting uneasy uneasy stomach want to throw up gagging nauseous dizzy
+headache: pounding throbbing pressure tight aching migraine dull sharp tense uncomfortable
+fatigue: tired exhausted drained weak sleepy worn out sluggish no energy heavy lethargic
+dizziness: lightheaded spinning woozy off balance vertigo faint unsteady headrush staggering blurred vision
+cough: hacking dry persistent wet throat clearing chesty tickle in throat raspy phlegm wheezy
+shortness of breath: breathless wheezing can't catch breath out of breath labored breathing shallow breathing gasping winded tight chest suffocating
+sore throat: scratchy painful raw irritated burning swollen hoarse swollen glands dry tender
+runny nose: stuffy congested dripping sneezing clear mucus watery nose blocked nose sniffles sinus post-nasal drip
+congestion: blocked stuffy full pressure stuffed up plugged nasal tightness swollen unable to breathe through nose
+diarrhea: loose stool watery stomach cramps frequent urgent upset stomach running to bathroom gassy explosive mushy
+vomiting: throwing up puking sick to stomach regurgitating heaving retching bile stomach contents gagging projectile
+constipation: bloated difficulty passing stool backed up hard stool infrequent straining no bowel movement discomfort irregular gassy
+back pain: sore back stiff back aching spine lower back pain hurting tension discomfort cramping tightness radiating
+abdominal pain: stomach ache cramps bloating pain in stomach sharp pain stomach cramps uncomfortable gnawing bloated gas
+muscle aches: sore stiff tight pain weak tender ache throbbing dull uncomfortable
+joint pain: stiff joints aching knees swollen joints tight joints painful elbows tender wrists swelling discomfort sore knees inflamed
+rash: itchy red spots hives blotchy irritated skin bumps dry skin patchy inflamed raised
+swelling: puffiness bloating fluid buildup swollen puffy enlarged tight skin tenderness hot bloated
+bruising: discoloration purple spots black and blue tender marks swelling painful blood under skin contusion hurt
+skin dryness: flaky itchy rough tight cracked scaly peeling dry patches irritated chapped
+sleep disturbance: insomnia can't sleep restless waking up tossing and turning sleep loss interrupted sleep disturbed difficulty falling asleep nightmare
+loss of appetite: not hungry no appetite lack of hunger feeling full not interested in food stomach upset food doesn't taste good queasy can't eat nausea
+heart palpitations: racing heart fluttering chest irregular heartbeat pounding heart fast pulse skipping beats thumping chest heart pounding anxiety out of breath
+chest pain: tight chest stabbing pressure in chest aching heavy chest discomfort sharp pain burning stabbing pain heaviness
+sweating: excessive sweating hot flashes clammy drenched perspiring moist sweaty palms cold sweat damp sticky
+tremors: shaking trembling uncontrollable shaking quivering jittery shaky hands uncontrollable trembling body nervous shakes vibration
+memory loss: forgetful can't remember confusion fuzzy memory absent-minded foggy hazy disoriented forget things scattered thoughts
+irritability: angry annoyed frustrated moody short-tempered edgy cranky upset quick to snap bad mood
+anxiety: nervous worried restless uneasy fearful panicked jittery stressed on edge anxious
+depression: sad hopeless empty down low mood feeling numb lack of interest tearful discouraged miserable
+weight loss: unintentional weight loss losing weight losing appetite thin losing pounds unexplained weight loss skinnier underweight dropping weight thin appearance
+numbness: tingling lost feeling pins and needles dead feeling can't feel cold sensation loss of touch prickling buzzing sensation deadened
+cold hands/feet: icy cold frozen numb cold to the touch freezing tingling in fingers toes feel stiff hands are blocks chills in extremities
+irregular heartbeat: heart skipping chest fluttering rapid heartbeat racing pulse heartbeat feels off fast heart rate out of sync heart pounding
+fainting: passing out lightheaded dizzy blackout weak knees feeling faint almost fell down dizzy spell
+burning sensation: hot burning pain like fire stinging tingling heat sensation feels like it's on fire uncomfortable heat
+leg cramps: tight calves muscle spasm cramps in legs can't move legs stiff legs painful leg spasm charley horse soreness in leg
+earache: pain in ear stuffy ear ringing in ear dull ache sharp ear pain itchy ear buzzing ear discomfort
+swollen glands: swollen neck glands tender glands sore throat lumps under jaw inflamed glands swollen lymph nodes tender lumps
+bloody stool: blood in stool red stool dark stool black tarry stools bleeding from bottom discomfort when pooping
+sneezing: constant sneezing itchy nose runny nose sneezing a lot nose keeps running uncontrollable sneezing burst of sneezes
+bad breath: foul breath morning breath stinky breath dry mouth unpleasant breath bad odor from mouth sour breath
+constantly thirsty: dry mouth can't quench thirst always thirsty drink a lot feeling dehydrated mouth always dry drinking non-stop
+dry mouth: cotton mouth parched mouth sticky mouth can't swallow easily feels dry inside mouth uncomfortable dryness in mouth
+hunger pains: stomach growling empty stomach feel like I need to eat can't concentrate from hunger hunger in stomach craving food
+excessive urination: frequent urination peeing a lot need to go often bathroom all the time always having to pee urgent need to pee
+vomiting blood: throwing up blood black vomit red vomit blood in vomit spitting up blood feels like blood coming up
+weak immune system: constantly sick catching colds a lot always run down getting sick easily infections all the time tired immune system
+joint stiffness: stiff joints pain in knees can't move arm hurts when moving joints feels tight in joints can't bend legs
+night sweats: sweating at night waking up drenched in sweat sweating in sleep feels too hot at night soaking wet from sleep
+insomnia: can't sleep restless sleep awake all night lying awake in bed can't fall asleep sleep problems not able to rest
+low blood pressure: feeling faint dizzy when standing lightheaded standing up feel weak when standing dizzy spells low energy from standing
