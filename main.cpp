@@ -1,5 +1,5 @@
 #include <iostream>
-#include "symptoms.h"
+#include "./model/symptoms.h"
 
 int main() {
     std::cout << "Testing symptoms.cpp compilation" << std::endl;
