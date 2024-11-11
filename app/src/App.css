@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f2f4f8;
+  font-family: 'DM Serif Display', serif;
+  background-color: #DFE5FF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,17 +16,17 @@ body {
 
 .App-header {
   margin-bottom: 20px;
-  font-family: 'Georgia', serif;
+  font-family: 'DM Serif Display', serif;
   color: #000; /* Adjusts color if needed */
 }
 
 .App-header h1 {
-  font-size: 3rem;
+  font-size: 100px;
   margin: 0;
 }
 
 .subheader {
-  font-size: 1.2rem;
+  font-size: 25px;
   color: #555;
   margin: 0;
 }
@@ -38,25 +40,40 @@ body {
 }
 
 .input-field {
-  width: 50%;
-  max-width: 500px;
+  width: 718px;
   font-size: 1.2rem;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 5px;
   box-sizing: border-box;
+  font-family: 'Serif', serif;
 }
 
-.search-button {
-  padding: 10px;
-  font-size: 1.2rem;
-  border: none;
-  background-color: #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
+/* Animation for loading text */
+.loading-text {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  color: #333;
+  display: inline-block;
 }
 
-.search-button:hover {
-  background-color: #bbb;
+.loading-text::after {
+  content: '.';
+  animation: dotAnimation 1.5s infinite steps(1, end);
+}
+
+/* Keyframes to animate the dots */
+@keyframes dotAnimation {
+  0% {
+    content: '.';
+  }
+  33% {
+    content: '..';
+  }
+  66% {
+    content: '...';
+  }
+  100% {
+    content: '0';
+  }
 }
