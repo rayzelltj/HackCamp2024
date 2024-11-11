@@ -1,11 +1,15 @@
 #include <iostream>
+#include <fstream>
 #include "symptoms.h"
 
 int main() {
     Symptoms symptoms;
-    map<string, string> top3 = symptoms.findSymptoms("ill dizzy vertigo");
+    string path = "app/input.json";
+    ifstream file(path);
+    string input;
+    getline(file, input);
 
-    
-    
+    map<string, string> top3 = symptoms.findSymptoms(input);
+
     return 0;
 }
