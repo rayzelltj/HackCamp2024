@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import symptoms from './symptoms.json';
 import './App.css';
+import steth from './logoicon.png';
 
 
 // const handleInfoRecieved = (event) => {
@@ -46,7 +48,10 @@ const Header = ({ loading }) => {
   if (loading) return null; // Do not render if loading is true
   return (
     <div className="App-header">
-      <h1>MedLex</h1>
+      <div className="header-content">
+        <h1>MedLex</h1>
+        <img src={steth} alt="steth" className="steth" />
+      </div>
       <h2 className="subheader">A symptom interpreter.</h2>
     </div>
   );
@@ -56,7 +61,13 @@ const Results = ({ response }) => {
   if (!response) return null; // Do not render if loading is true
   return (
     <div className="App-header">
-      
+      <ul>
+        {symptoms.map((item) => (
+          <li key={item.first}>
+            {item.first} : {item.second}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
