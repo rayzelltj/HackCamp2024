@@ -24,7 +24,7 @@ public:
     Symptoms();
 
 
-    vector<string> findSymptoms(string sentence);
+    map<string, string> findSymptoms(string sentence);
 
 
 private:
@@ -46,7 +46,7 @@ private:
     set<string> filterSentence(string sentence);
 
     // Finds the top 3 symptoms and returns it
-    vector<string> top3symptoms(map<string, int> symptomCount); 
+    map<string, string> top3symptoms(map<string, int> symptomCount); 
 
     // FIELDS
 
