@@ -4,7 +4,7 @@
 
 int main() {
     Symptoms symptoms;
-    string path = "app/input.json";
+    string path = "../app/input.json";
     ifstream file(path);
     string input;
     getline(file, input);
