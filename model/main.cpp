@@ -2,6 +2,12 @@
 #include "symptoms.h"
 
 int main() {
-    std::cout << "Testing: symptoms.cpp compiled" << std::endl;
+    Symptoms symptoms;
+    vector<string> top3 = symptoms.findSymptoms("Burning");
+
+    for (string symptom: top3) {
+        cout << symptom << endl;
+    }
+    
     return 0;
 }
