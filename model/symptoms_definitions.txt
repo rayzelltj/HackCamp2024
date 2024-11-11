@@ -47,4 +47,8 @@ dry mouth: A condition in which the mouth feels unusually dry, often due to dehy
 hunger pains: A gnawing or cramping sensation in the stomach due to hunger.
 excessive urination: Frequent need to urinate, often more than normal, which may be a symptom of various conditions.
 vomiting blood: The expulsion of blood from the stomach, which can be a serious symptom of gastrointestinal bleeding.
-weak immune system: A condition where the body's immune system is not functioning properly, leaving a person more susceptible to infections.
+weak immune system: A condition where the body's immune system is not functioning properly, leaving a person more susceptible to infections.                    
+joint stiffness: Difficulty moving joints due to pain, tightness, or inflammation, often affecting mobility.
+night sweats: Excessive sweating during the night, often caused by fever, illness, or certain medications.
+insomnia: Difficulty falling asleep or staying asleep, leading to inadequate rest and daytime fatigue.
+low blood pressure: A condition where blood pressure is abnormally low, causing dizziness, lightheadedness, or fainting, especially when standing.

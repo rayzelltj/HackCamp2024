@@ -15,7 +15,7 @@ Symptoms::Symptoms() {
 // Finds symptoms the patient is describing, and return a map of 
 // the symptom name with the number of times it was mentioned by keywords
 
-vector<string> Symptoms::findSymptoms(string sentence) {
+map<string, string> Symptoms::findSymptoms(string sentence) {
     set<string> words = filterSentence(simplifySentence(sentence));
     map<string, int> symptomCount;
     for (string word: words) {
@@ -35,10 +35,10 @@ vector<string> Symptoms::findSymptoms(string sentence) {
 //
 
 // Gets the top 3 symptoms and returns it
-vector<string> Symptoms::top3symptoms(map<string, int> symptomCount) {
-    vector<string> top3;
+map<string, string> Symptoms::top3symptoms(map<string, int> symptomCount) {
+    map<string, string> top3;
     if (symptomCount.size() == 0) {
-        top3.push_back("No Matches Found");
+        top3["null"] = "No Matches Found";
         return top3;
     }
 
@@ -50,7 +50,7 @@ vector<string> Symptoms::top3symptoms(map<string, int> symptomCount) {
 
     // get the top 3 and return it
     for (int i = 0; i < 3; i++) {
-        top3.push_back(symptomCountModified[i].first);
+        top3[symptomCountModified[i].first] = symp_def[symptomCountModified[i].first];
     }
 
     return top3;

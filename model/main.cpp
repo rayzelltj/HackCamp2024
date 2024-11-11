@@ -3,10 +3,10 @@
 
 int main() {
     Symptoms symptoms;
-    vector<string> top3 = symptoms.findSymptoms("Burning");
+    map<string, string> top3 = symptoms.findSymptoms("ill dizzy vertigo");
 
-    for (string symptom: top3) {
-        cout << symptom << endl;
+    for (auto& lookup: top3) {
+        cout << lookup.first << ": " << lookup.second << endl;
     }
     
     return 0;
