@@ -30,7 +30,7 @@ int main() {
         j[pair.first] = pair.second;
     }
 
-    string filename = "../app/symptoms.json";
+    string filename = "../app/src/symptoms.json";
 
     // Write JSON to file
     ofstream output(filename);
