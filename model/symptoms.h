@@ -22,30 +22,44 @@ public:
 
     // Constructor that initializes the private fields
     Symptoms();
-    void parseKeywords();
-    void parseDefinitions();
-    map<string, set<string>> symp_key;
-    map<string, string> symp_def;
+
+
+    vector<string> findSymptoms(string sentence);
 
 
 private:
     // functions to add new keys or values
     void addValue(string key, string value);
-    void addkey(string key);
 
-    // function to search for words
-    vector<string> findWord(string word);
+    // HELPER FUNCTIONS
 
     // Helper functions to help with the parsing done by the constructor
-    void parseDefinitions(ifstream definitions);
-    void parseKeywords(ifstream keywords);
+    void parseDefinitions();
+    void parseKeywords();
+    void parseCommonWords();
     void saveToFile(string filename);
 
+    // Converts sentence to lower case and removes punctuation
+    string simplifySentence(string sentence);
+
+    // Filters out the common words
+    set<string> filterSentence(string sentence);
+
+    // Finds the top 3 symptoms and returns it
+    vector<string> top3symptoms(map<string, int> symptomCount); 
+
+    // FIELDS
+
     // Stores the name of the symptoms and keywords associated with it
-    // map<string, set<string>> symp_key; 
+    map<string, set<string>> symp_key;
 
     // Stores the name of the symptoms and definition associated with it
-    // map<string, string> symp_def;
+    map<string, string> symp_def;
+
+    // Stores the common words that we should lookout for
+    set<string> common;
+
+    
 
 };
 

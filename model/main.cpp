@@ -3,18 +3,11 @@
 
 int main() {
     Symptoms symptoms;
-    std::cout << "Testing: symptoms.cpp compiled" << std::endl;
-    symptoms.parseKeywords();
-    symptoms.parseDefinitions();
-    for (auto& entry : symptoms.symp_key) {
-        std::cout << entry.first << ": ";
-        for (const auto& word : entry.second) {
-            std::cout << word << " ";
-        }
-        std::cout << std::endl;
-    }
+    vector<string> top3 = symptoms.findSymptoms("Burning");
 
-    cout << "test";
-    cout << symptoms.symp_def["tremors"] << endl;
+    for (string symptom: top3) {
+        cout << symptom << endl;
+    }
+    
     return 0;
 }
