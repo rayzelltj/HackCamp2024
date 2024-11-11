@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import symptoms from './symptoms.json';
 import './App.css';
 
 
@@ -56,7 +57,13 @@ const Results = ({ response }) => {
   if (!response) return null; // Do not render if loading is true
   return (
     <div className="App-header">
-      
+      <ul>
+        {symptoms.map((item) => (
+          <li key={item.first}>
+            {item.first} : {item.second}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
