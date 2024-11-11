@@ -18,7 +18,7 @@ app.post('/process-input', (req, res) => {
   
   try {
     // Write user input as a string to input.json
-    fs.writeFileSync(inputFilePath, JSON.stringify({ input: userInput }));
+    fs.writeFileSync(inputFilePath, JSON.stringify(userInput));
     console.log('User input written to input.json');
   } catch (err) {
     console.error('Error writing input.json:', err);
