@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import './App.css';
 
+
+// const handleInfoRecieved = (event) => {
+//   if (someBoolean) {
+//     setLoading(false);
+//     setResponse(true);
+//   }
+// };
+
 const TextBox = ({ loading, setLoading }) => {
   const [text, setText] = useState("");
-  const [response, setResponse] = useState(false);
 
   const handleChange = (event) => {
     setText(event.target.value); 
@@ -20,24 +27,18 @@ const TextBox = ({ loading, setLoading }) => {
   if (loading) return null; // Do not render if loading is true
 
   return (
-    <>
-      {response ? (
-        <p>Response</p>
-      ) : (
-        <div className="TextBox">
-          <input
-            type="text"
-            id="textBox"
-            value={text}
-            onChange={handleChange}
-            onKeyDown={handleKeyDown}
-            className="input-field"
-            placeholder='e.g. "I feel dizzy and my chest feels tight"'
-            autoFocus
-          />
-        </div>
-      )}
-    </>
+    <div className="TextBox">
+      <input
+      type="text"
+      id="textBox"
+      value={text}
+      onChange={handleChange}
+      onKeyDown={handleKeyDown}
+      className="input-field"
+      placeholder='e.g. "I feel dizzy and my chest feels tight"'
+      autoFocus
+      />
+    </div>
   );
 };
 
@@ -51,19 +52,47 @@ const Header = ({ loading }) => {
   );
 };
 
+const Results = ({ response }) => {
+  if (!response) return null; // Do not render if loading is true
+  return (
+    <div className="App-header">
+      
+    </div>
+  );
+};
+
 function App() {
   const [loading, setLoading] = useState(false);
+  const [response, setResponse] = useState(false);
+
+  const handleInfoRecieved = (event) => {
+    if (false) { //insert some variable from backend
+      setLoading(false);
+      setResponse(true);
+    }
+  };
 
   return (
     <div className="App">
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
+      
+      {response ? (
         <>
+          <Results response = {response}/>
+          <TextBox loading = {loading} setLoading={setLoading} />
+        </>
+      ) : (
+        (loading ? (
+          <p>Loading...</p>
+        ) : (
+          <>
           <Header loading={loading} />
           <TextBox loading={loading} setLoading={setLoading} />
-        </>
+          </>
+        ))
       )}
+
+        {}
+
     </div>
   );
 }
