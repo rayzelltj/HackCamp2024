@@ -82,7 +82,7 @@ function App() {
         </>
       ) : (
         (loading ? (
-          <p>Loading...</p>
+          <p className="loading-text">Please give us a moment to analyze</p>
         ) : (
           <>
           <Header loading={loading} />
@@ -90,8 +90,6 @@ function App() {
           </>
         ))
       )}
-
-        {}
 
     </div>
   );
