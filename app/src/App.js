@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import symptoms from './symptoms.json';
+// import symptoms from './symptoms.json';
 import './App.css';
 import steth from './logoicon.png';
 
+const BASE_URL = 'http://localhost:3000';
 
 // const handleInfoRecieved = (event) => {
 //   if (someBoolean) {
@@ -11,20 +12,44 @@ import steth from './logoicon.png';
 //   }
 // };
 
-const TextBox = ({ loading, setLoading }) => {
+const TextBox = ({ loading, setLoading, setResponse }) => {
   const [text, setText] = useState("");
 
   const handleChange = (event) => {
     setText(event.target.value); 
   };
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = async (event) => {
     if (event.key === 'Enter' && text.trim() !== "") {
       setLoading(true);
+      setResponse(null);
+      await processInput(text);
+      const symptomsData = await fetchSymptoms();
+      setTimeout(() => {
+        setResponse(symptomsData);
+        setLoading(false);
+      }, 3000);
       // Simulate loading or navigate to another page here
       // e.g., window.location.href = `/newpage?query=${encodeURIComponent(text)}`;
     }
   };
+
+
+async function processInput(input) {
+  const response = await fetch(`/process-input`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ input }),
+  });
+  return response.json();
+}
+
+async function fetchSymptoms() {
+  const response = await fetch(`/symptoms`);
+  return response.json();
+}
 
   if (loading) return null; // Do not render if loading is true
 
@@ -62,9 +87,9 @@ const Results = ({ response }) => {
   return (
     <div className="App-header">
       <ul>
-        {symptoms.map((item) => (
-          <li key={item.first}>
-            {item.first} : {item.second}
+        {Object.entries(response).map(([key, value]) => (
+          <li key={key}>
+            {key} : {value}
           </li>
         ))}
       </ul>
@@ -89,7 +114,7 @@ function App() {
       {response ? (
         <>
           <Results response = {response}/>
-          <TextBox loading = {loading} setLoading={setLoading} />
+          <TextBox loading = {loading} setLoading={setLoading} setResponse={setResponse} />
         </>
       ) : (
         (loading ? (
@@ -97,7 +122,7 @@ function App() {
         ) : (
           <>
           <Header loading={loading} />
-          <TextBox loading={loading} setLoading={setLoading} />
+          <TextBox loading={loading} setLoading={setLoading} setResponse={setResponse} />
           </>
         ))
       )}
